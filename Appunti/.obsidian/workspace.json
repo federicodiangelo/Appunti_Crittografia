@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti Crittografia/czz.md",
+                "file": "Appunti Crittografia/Guida.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "czz"
+              "title": "Guida"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti Crittografia/czz.md",
+                "file": "Appunti Crittografia/Guida.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a czz"
+              "title": "Riferimenti a Guida"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti Crittografia/czz.md",
+                "file": "Appunti Crittografia/Guida.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da czz"
+              "title": "Collegamenti in uscita da Guida"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti Crittografia/czz.md",
+                "file": "Appunti Crittografia/Guida.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di czz"
+              "title": "Struttura di Guida"
             }
           },
           {
@@ -194,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3227cf0a8db9ced",
+  "active": "f524b19e837e9d71",
   "lastOpenFiles": [
     "Appunti Crittografia/Lezione 5.md",
-    "Appunti Crittografia/czz.md",
+    "Appunti Crittografia/Guida.md",
     "Pasted image 20260322172811.png.md",
     "Appunti Crittografia/Pasted image 20260322172811.png",
     "Appunti Crittografia/Senza nome.md",
