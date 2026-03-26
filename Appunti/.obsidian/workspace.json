@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b6b2574b52fc78cb",
+        "id": "4436f597d8e7903d",
         "type": "tabs",
         "children": [
           {
-            "id": "559d93fdd5c3ac7c",
+            "id": "d8574d73cad3289f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,7 +192,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "559d93fdd5c3ac7c",
+  "active": "d8574d73cad3289f",
   "lastOpenFiles": [
     "Appunti Advanced Database Systems/Note sull'esame.md",
     "Appunti Crittografia/Lezione 9.md",
