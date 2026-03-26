@@ -103,4 +103,13 @@ Questa è una via di mezzo usata per ottimizzare le prestazioni.
 
 - **Crash tra $w(x)$ e il record "C"**: Il sistema deve eseguire l'**UNDO** solo per la parte di dati già scritta ($X$), mentre per $Y$ non serve fare nulla perché non era ancora stato toccato nel database.
     
-- **Crash dopo il record "C" ma prima di $w(y)$**: Il sistema deve eseguire il **REDO** per l'operazione $w(y)$ che non è ancora avvenuta, assicurandosi che le modifiche di una transazione confermata non vadano perse.========
+- **Crash dopo il record "C" ma prima di $w(y)$**: Il sistema deve eseguire il **REDO** per l'operazione $w(y)$ che non è ancora avvenuta, assicurandosi che le modifiche di una transazione confermata non vadano perse.
+___________________________________________________________________
+
+## Riepilogo Regole d'Oro
+
+Indipendentemente dalla linea temporale, il DBMS rispetta sempre queste due regole critiche:
+
+1. **WAL (Write-Ahead-Log)**: Il record di log ($U$) deve sempre precedere la scrittura nel DB ($w$) per permettere l'UNDO.
+    
+2. **Commit-Precedence**: Tutti i record di log ($AS$) devono essere scritti prima di considerare valido il Commit, per permettere il REDO.
