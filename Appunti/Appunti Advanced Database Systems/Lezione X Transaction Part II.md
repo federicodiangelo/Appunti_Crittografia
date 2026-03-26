@@ -192,5 +192,4 @@ Infine, il sistema ripercorre il log in avanti e ripete tutte le azioni delle tr
 
 Al termine di queste fasi, il database è di nuovo in uno stato **coerente**.
 
-
-![[Pasted image 20260326123351.png]]
+![[Pasted image 20260326123351.png|391]]
