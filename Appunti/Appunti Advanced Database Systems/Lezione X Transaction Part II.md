@@ -73,3 +73,34 @@ L'obiettivo è classificare le transazioni in base al loro stato al momento del 
 3. **Fase di UNDO:** Si scorre il log all'indietro annullando le azioni delle transazioni nell'insieme UNDO.
     
 4. **Fase di REDO:** Si scorre il log in avanti ripetendo tutte le azioni delle transazioni nell'insieme REDO.
+
+![[Pasted image 20260326120939.png|697]]
+
+
+Ecco cosa succede se avviene un crash in punti diversi delle linee temporali:
+
+## 1. Caso (a): Aggiornamento Immediato (Immediate Update)
+
+In questa modalità, il database fisico viene aggiornato _prima_ del commit.
+
+- **Crash prima del record "C"**: Poiché le operazioni di scrittura nel database ($w(x)$ e $w(y)$) sono già avvenute, il sistema deve eseguire un **UNDO**. Usando i valori "Before State" (BS) salvati nel log, il DBMS riporta gli oggetti $X$ e $Y$ al loro stato originale per garantire l'atomicità.
+    
+- **Crash dopo il record "C"**: La transazione è considerata completata con successo. Anche se avviene un crash un istante dopo, i dati sono già nel database. Tuttavia, per durabilità, il sistema potrebbe eseguire un **REDO** se il buffer non fosse stato ancora svuotato completamente sul disco.
+    
+
+## 2. Caso (b): Aggiornamento Differito (Deferred Update)
+
+Qui il database viene aggiornato solo _dopo_ che il commit è stato registrato nel log.
+
+- **Crash prima del record "C"**: Non occorre fare nulla (**Nothing**). Poiché nessuna operazione di scrittura ($w$) ha ancora toccato il database fisico, non ci sono modifiche da annullare.
+    
+- **Crash dopo il record "C" ma prima di $w(x)$ o $w(y)$**: Questo è il caso tipico che richiede un **REDO**. Il sistema vede che la transazione è "impegnata" (commit presente), ma i dati fisici non sono stati ancora scritti; quindi usa i valori "After State" (AS) del log per scrivere $X$ e $Y$ nel database.
+    
+
+## 3. Caso (c): Aggiornamento Misto (Mixed Update)
+
+Questa è una via di mezzo usata per ottimizzare le prestazioni.
+
+- **Crash tra $w(x)$ e il record "C"**: Il sistema deve eseguire l'**UNDO** solo per la parte di dati già scritta ($X$), mentre per $Y$ non serve fare nulla perché non era ancora stato toccato nel database.
+    
+- **Crash dopo il record "C" ma prima di $w(y)$**: Il sistema deve eseguire il **REDO** per l'operazione $w(y)$ che non è ancora avvenuta, assicurandosi che le modifiche di una transazione confermata non vadano perse.========
