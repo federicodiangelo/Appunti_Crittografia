@@ -272,8 +272,8 @@ Il professore scrive $x=7$ in fondo e chiude la lezione. Per curiosità, se calc
 __________________________________________________________________________
 
 
-![[Pasted image 20260326100441.png|388]]
-![[Pasted image 20260326100424.png|390]]
+![[Pasted image 20260326100441.png|324]]
+![[Pasted image 20260326100424.png|325]]
 
 Il professore sta usando esattamente il "trucco binario" di prima, ma applicato a una nuova equazione. E la cosa più bella è che ci svela **un trucchetto pratico** (il numero 86) per velocizzare i calcoli quando si "sbuccia" l'equazione!
 
