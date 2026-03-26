@@ -11,10 +11,14 @@
             "id": "bf0f97d79a74afd0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Appunti Crittografia/Lezione 9.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "Lezione 9"
             }
           }
         ]
@@ -187,8 +191,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8eb07cd78a394b65",
+  "active": "bf0f97d79a74afd0",
   "lastOpenFiles": [
+    "Appunti Crittografia/Lezione 9.md",
     "Appunti Advanced Database Systems/Lezione 02.md",
     "Appunti Advanced Database Systems/Lezione 01.md",
     "Appunti Algorithms and Data Structures/Lista Pagine del Libro.md",
@@ -208,7 +213,7 @@
     "Appunti Crittografia/Lezione 5.md",
     "Pasted image 20260322172811.png.md",
     "Appunti Crittografia/Pasted image 20260322172811.png",
-    "Appunti Crittografia/Senza nome.md",
+    "Appunti Crittografia/Lezione 9.md",
     "Benvenuto.md"
   ]
 }
